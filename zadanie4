@@ -1,0 +1,15 @@
+#!/bin/bash
+X=5
+echo "Podaj liczbe"
+read L
+if [ "$L" -lt "$X" ];then
+   echo "Za mała"
+   ./zadanie4
+  elif [ "$L" -gt "$X" ];then
+   echo "Za duża"
+   ./zadanie4
+  elif [ "$L" -eq "$X" ];then
+   echo "Wygrałeś"
+
+fi
+#echo "Przegrałeś"

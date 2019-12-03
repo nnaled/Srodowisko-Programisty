@@ -1,0 +1,14 @@
+#!bin/bash
+function suma()
+{
+  echo "Podaj liczbe"
+  read Z
+  sum=$[sum + Z]
+  if [ "$sum" -le 100 ]
+   then
+   echo -e "suma = "$sum" to mniej niz 100\n"
+   suma
+  fi
+}
+suma
+echo "Suma końcowa to: $sum"

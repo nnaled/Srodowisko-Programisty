@@ -1,0 +1,9 @@
+#!bin/bash
+if [ -e "$1" ] ; then
+   nano "$1"
+else
+   touch "$1"
+   echo "#!bin/bash" >> "$1"
+   chmod 750 "$1"
+   nano "$1"
+fi
