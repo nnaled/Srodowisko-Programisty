@@ -10,7 +10,7 @@ echo obie zmienne maja ta sama nazwe
 goto koniec
 :zamiana
 SET temp=0
-ren %1% %temp%
+ren %1 %temp%
 ren %2 %1
 ren %temp% %2
 goto koniec
@@ -18,4 +18,4 @@ goto koniec
 echo zmienne nie istnieja
 goto koniec
 :koniec
-pause
+pause>nul
